@@ -18,13 +18,13 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"`WOIIIIIIIIII!! User ****** By` {DEFAULTUSER}\n"
-    no_reason = "Tidak sofun "
-    await event.edit("**AKAN KU NGANU KAMU HUH!! ☠️**")
+    mentions = f"` User ****** By` {DEFAULTUSER}\n"
+    no_reason = "No Reason Given "
+    await event.edit("**AKAN KU NGANU KAMU HUH ☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
-        mentions += f"WOIIIIIIIIII!! User ******* By {DEFAULTUSER} \nReason: Tidak sofun. ")
+        mentions += f""
     reply_message = None
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
@@ -55,11 +55,11 @@ async def gbun(event):
             await reply_message.reply(jnl)
     else:
         mention = (
-            f"WOIIIIIIIIII!! User ******* By {DEFAULTUSER} \nReason: Tidak sofun. ")
+            f"WOIIIIIIIIII!! User ******* By {DEFAULTUSER} \nReason: No Reason Given. ")
         await event.reply(mention)
     await event.delete()
 
 CMD_HELP.update({
     "fakegban": "`.fgban`\
     \nUsage: Type .fgban or Reply .fgban reason and see it yourself. "
-})
+}
