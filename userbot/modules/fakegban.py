@@ -18,9 +18,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"` User ****** By` {DEFAULTUSER}\n"
+    mentions = f"`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n"
     no_reason = "No Reason Given "
-    await event.edit("**AKAN KU NGANU KAMU HUH ☠️**")
+    await event.edit("**Summoning out the mighty gban hammer ☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -35,10 +35,10 @@ async def gbun(event):
         # make meself invulnerable cuz why not xD
         if idd == 1036951071:
             await reply_message.reply("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 6969$ to my master__ [Heyworld](tg://user?id=1036951071) __to release your account__😏")
-        else
-            jnl = ("`WOIIIIIIIIII!!`"
+        else:
+            jnl = ("`Warning!!`"
                    "[{}](tg://user?id={})"
-                   f"` ******* By` {DEFAULTUSER}\n\n"
+                   f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
                    "**Name: ** __{}__\n"
                    "**ID : ** `{}`\n"
                    ).format(firstname, idd, firstname, idd)
@@ -55,11 +55,11 @@ async def gbun(event):
             await reply_message.reply(jnl)
     else:
         mention = (
-            f"WOIIIIIIIIII!! User ******* By {DEFAULTUSER} \nReason: No Reason Given. ")
+            f"Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
         await event.reply(mention)
     await event.delete()
 
 CMD_HELP.update({
     "fakegban": "`.fgban`\
     \nUsage: Type .fgban or Reply .fgban reason and see it yourself. "
-}
+})
