@@ -24,7 +24,7 @@ async def gbun(event):
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
-        mentions += f""
+        mentions += f"WOIIIIIIIIII!! User ******* By {DEFAULTUSER} \nReason: Tidak sofun. ")
     reply_message = None
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
