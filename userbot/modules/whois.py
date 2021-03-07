@@ -17,11 +17,11 @@ from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
 
 
-@register(pattern=".whois(?: |$)(.*)", outgoing=True)
+@register(pattern=".kepo(?: |$)(.*)", outgoing=True)
 async def who(event):
 
     await event.edit(
-        "`Mengambil Informasi Pengguna Ini...`")
+        "`Siapa nichhhh inceng dulu ahh...`")
 
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -31,7 +31,7 @@ async def who(event):
     try:
         photo, caption = await fetch_info(replied_user, event)
     except AttributeError:
-        return event.edit("`Saya Tidak Mendapatkan Informasi Apapun.`")
+        return event.edit("`Lah kok gada.`")
 
     message_id_to_reply = event.message.reply_to_msg_id
 
@@ -147,6 +147,6 @@ async def fetch_info(replied_user, event):
 
 CMD_HELP.update({
     "whois":
-    ">`.whois <username> Atau Balas Ke Pesan Pengguna Ketik .whois`"
-    "\nUsage: Mendapatkan Informasi Pengguna."
+    ">`.kepo <username> Atau Balas Ke Pesan Pengguna Ketik .kepo`"
+    "\nUsage: Mengepoin nama orang bossku."
 })
