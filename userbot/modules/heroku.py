@@ -179,12 +179,12 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "**☛ Informasi Dyno**:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
-                f"✥ `Penggunaan Dyno` **{app.name}**:\n"
+                "**💀 Info nyawa Bot**:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
+                f"✥ `Penggunaan nyawa Bot` **{app.name}**:\n"
                 f"  ❉ **{AppHours} Jam - "
                 f"{AppMinutes} Menit  -  {AppPercentage}%**"
                 "\n ✲━─━─━─━─━─━─━─━─━─━✲\n"
-                "✥ `Sisa Dyno Bulan Ini`:\n"
+                "✥ `Sisa nyawa Bot Bulan Ini`:\n"
                 f"  ❉ **{hours} Jam - {minutes} Menit  "
                 f"-  {percentage}%**\n"
                 "╰━┷━━━━━━━━━━━━━━━━┷━╯"
@@ -215,7 +215,7 @@ async def _(dyno):
     return os.remove("logs.txt")
 
 
-CMD_HELP.update({"heroku": ">.`usage`"
+CMD_HELP.update({"heroku": ">.`umur`"
                  "\nUsage: Check Dyno Heroku"
                  "\n\n>`.set var <NEW VAR> <VALUE>`"
                  "\nUsage: Tambahkan Variabel Baru Atau Memperbarui Variabel"
