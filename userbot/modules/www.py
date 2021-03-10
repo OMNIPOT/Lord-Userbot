@@ -93,15 +93,15 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`Lord Ping..............`")
+    await pong.edit("`Flameee Ping..............`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**🔥 Flame Ping 🔥**\n"
-                    f"° **Ping:** "
+                    f"° **PING!:** "
                     f"`%sms` \n"
                     f"° **Uptime:** "
                     f"`{uptime}` \n"
-                    f"°BOSS:™ `{ALIVE_NAME}`" % (duration))
+                    f"° BOSS: `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.speed$")
@@ -117,17 +117,17 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Hasil Tes:\n**"
-                   "✘ **Dimulai Pada:** "
+                   "🔥 **Dimulai Pada:** "
                    f"`{result['timestamp']}` \n"
-                   "✘ **Download:** "
+                   "🔥 **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "✘ **Upload:** "
+                   "🔥 **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "✘ **Ping:** "
+                   "🌋 **Ping:** "
                    f"`{result['ping']}` \n"
-                   "✘ **ISP:** "
+                   "🌋 **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "✦҈͜͡➳ **BOT:** `Lord Userbot`")
+                   "🌋 **BOT:** `Flame USbot`")
 
 
 def speed_convert(size):
@@ -148,13 +148,13 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**B**")
-    await pong.edit("**BO**")
-    await pong.edit("**BOS**")
-    await pong.edit("**BOSS🔥**")
+    await pong.edit("**TIME**")
+    await pong.edit("**TO**")
+    await pong.edit("**FIRE**")
+    await pong.edit("**FLAME🔥**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"🔥 KOPONG!**__\n**°° Ping:** `%sms`\n**°° Uptime:** `{uptime}`\n💀BOSS:**__ `{ALIVE_NAME}`" % (duration))
+    await pong.edit(f"🔥 KOPONG!**__\n**°° Ping:** `%sms`\n**°° Uptime:** `{uptime}`\n°°BOSS:**__ `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.pong$")
