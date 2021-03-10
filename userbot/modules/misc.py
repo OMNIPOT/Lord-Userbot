@@ -70,7 +70,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Flame-Ubot Telah Dimatikan`")
+                                        "`Flame-USbot Telah Dimatikan`")
     await bot.disconnect()
 
 
@@ -81,7 +81,7 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Flame-Ubot Telah Di Restart`")
+                                        "`Flame-USbot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[Lord-Userbot Repo](https://github.com/Zora24/Lord-Userbot/blob/Lord-Userbot/README.md)"
+        "\n[Flame-USbot Repo](https://github.com/OMNIPOT/Lord-Userbot)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -120,8 +120,8 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-   https://github.com/OMNIPOT/Lord-Userbot)\n❃n❃ **Pemilik:** [Ardian](@Establishedd)" 
-
+        "🔥 **Repo Userbot:**[Flame-USbot](https://github.com/OMNIPOT/Lord-Userbot)\n🔥 **Pengubah:** [Ardian](t.me/Establishedd)"
+    )
 
 
 @register(outgoing=True, pattern="^.raw$")
