@@ -65,7 +65,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Lord-Userbot....`")
+    await event.edit("`Mematikan Flame-USbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -76,7 +76,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Lord-Userbot...`")
+    await event.edit("`Mengulang Kembali Flame-USbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "🔥 **Repo Userbot:**[Flame-USbot](https://github.com/OMNIPOT/Lord-Userbot)\n🔥 **Pengubah:** [Ardian](t.me/Establishedd)"
+        "🔥 **Repo Userbot:** [Flame-USbot](https://github.com/OMNIPOT/Lord-Userbot)\n🔥 **Pengubah:** [Ardian](t.me/Establishedd)"
     )
 
 
@@ -159,11 +159,11 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Harap Balas Di Gambar Lord`")
+        await img.edit("`Balas Di Gambar Kawan`")
         return
 
     if photo:
-        await img.edit("`Processing...`")
+        await img.edit("`Lagi diproses bosku...`")
         try:
             image = Image.open(photo)
         except OSError:
